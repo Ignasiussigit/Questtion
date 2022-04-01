@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Penjelasan</title>
+</head>
+
+<body>
+    <h1 class="anim-text">Question</h1>
+    <div class="container">
+
+        <div class="content">
+            <div class="header">
+                Apa Fungsi Bootsrap?
+            </div>
+            <div class="body">
+                <div class="body-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae! Reprehenderit illo
+                    qui ut exercitationem tenetur ullam nihil! Quisquam dicta voluptates, in enim doloribus sunt facere
+                    qui sed et. Aspernatur soluta reprehenderit non praesentium quibusdam odit tempore amet consectetur
+                    a distinctio assumenda molestias atque laboriosam nam id possimus, inventore nulla.
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                Apa Fungsi Mouse?
+            </div>
+            <div class="body">
+                <div class="body-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae! Reprehenderit illo
+                    qui ut exercitationem tenetur ullam nihil! Quisquam dicta voluptates, in enim doloribus sunt facere
+                    qui sed et. Aspernatur soluta reprehenderit non praesentium quibusdam odit tempore amet consectetur
+                    a distinctio assumenda molestias atque laboriosam nam id possimus, inventore nulla.
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                Apa Fungsi Keyboard?
+            </div>
+            <div class="body">
+                <div class="body-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae! Reprehenderit illo
+                    qui ut exercitationem tenetur ullam nihil! Quisquam dicta voluptates, in enim doloribus sunt facere
+                    qui sed et. Aspernatur soluta reprehenderit non praesentium quibusdam odit tempore amet consectetur
+                    a distinctio assumenda molestias atque laboriosam nam id possimus, inventore nulla.
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                Apa Fungsi Router?
+            </div>
+            <div class="body">
+                <div class="body-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae! Reprehenderit illo
+                    qui ut exercitationem tenetur ullam nihil! Quisquam dicta voluptates, in enim doloribus sunt facere
+                    qui sed et. Aspernatur soluta reprehenderit non praesentium quibusdam odit tempore amet consectetur
+                    a distinctio assumenda molestias atque laboriosam nam id possimus, inventore nulla.
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                Apa Fungsi Switch?
+            </div>
+            <div class="body">
+                <div class="body-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae! Reprehenderit illo
+                    qui ut exercitationem tenetur ullam nihil! Quisquam dicta voluptates, in enim doloribus sunt facere
+                    qui sed et. Aspernatur soluta reprehenderit non praesentium quibusdam odit tempore amet consectetur
+                    a distinctio assumenda molestias atque laboriosam nam id possimus, inventore nulla.
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <small>&copy; Ignasius 2022</small>
+        </div>
+    </div>
+
+
+    <script>
+        const itemHeaders = document.querySelectorAll(".header");
+
+        itemHeaders.forEach(itemHeader => {
+            itemHeader.addEventListener("click", event => {
+                itemHeader.classList.toggle("active");
+
+                const itemBody = itemHeader.nextElementSibling;
+                if (itemHeader.classList.contains("active")) {
+                    itemBody.style.maxHeight = itemBody.scrollHeight + "px"
+                } else {
+                    itemBody.style.maxHeight = 0;
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>
